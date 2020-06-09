@@ -58,7 +58,7 @@ modules with no loaders took 1.61 secs
   module count = 27
 ```
 ####优化resolve查找效率
-Webpack的resolve.modules配置模块库（即 node_modules）所在的位置，在 js 里出现  import 'vue' 这样不是相对、也不是绝对路径的写法时，会去 node_modules 目录下找。但是默认的配置，会采用向上递归搜索的方式去寻找，但通常项目目录里只有一个 node_modules，且是在项目根目录，为了减少搜索范围，可以直接写明 node_modules 的全路径；同样，对于别名(alias)的配置，亦当如此：
+Webpack的resolve.modules配置模块库（即 node_modules）所在的位置，在 js 里出现  import 'vue' 这样不是相对、也不是绝对路径的写法时，会去 当前的node_modules 目录下找。但是默认的配置，会采用向上递归搜索的方式去寻找，但通常项目目录里只有一个 node_modules，且是在项目根目录，为了减少搜索范围，可以直接写明 node_modules 的全路径；同样，对于别名(alias)的配置，亦当如此：
 
 
 #####优化resolve路径之后，打包时间优化到```5.3min```左右
@@ -549,3 +549,12 @@ _postcss-loader@3.0.0@postcss-loader took 2.71 secs
   module count = 21
 modules with no loaders took 0.698 secs
   module count = 24
+
+#### 更加全面的优化方向
+
+##### 缩小文件搜索的范围
+* 优化loader的配置，让尽可能少的文件被loader处理
+* 优化resolve.modules检索规则
+* 使用alias
+* 优化mainFields配置
+* 优化noParse
