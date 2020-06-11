@@ -12,7 +12,7 @@
 [mdn位运算操作符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
 #### 如何实现深拷贝？
-[手写深拷贝](https://github.com/NuoHui/fe-note/blob/master/docs/javascript/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D.md#%E7%8E%AF)
+[手写深拷贝](https://github.com/NuoHui/fe-note/blob/master/docs/javascript/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D.md#)
 
 [lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31) 文中还涉及到知识点： 
 [位掩码](https://juejin.im/post/5dc2cc0b6fb9a04a916d0ba0)
