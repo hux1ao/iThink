@@ -57,3 +57,14 @@
 * package.json中 ~, ^分别是干什么用的？
 * npm install 基本流程？
 * 模块扁平化的过程？
+
+#### 为什么使用hook
+
+[从Mixin到HOC再到Hook](https://juejin.im/post/5cad39b3f265da03502b1c0a)
+[Why React Hooks, and how did we even get here?](https://www.freecodecamp.org/news/why-react-hooks-and-how-did-we-even-get-here-aa5ed5dc96af/)
+
+
+## 算法专栏
+
+#### 哈希表
+[头条正在面的哈希表问题](https://juejin.im/post/5ecb1db8f265da77147104c2?utm_source=gold_browser_extension)
