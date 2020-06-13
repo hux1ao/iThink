@@ -12,12 +12,13 @@
 [mdn位运算操作符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
 #### 如何实现深拷贝？
-[手写深拷贝](https://github.com/NuoHui/fe-note/blob/master/docs/javascript/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D.md#)
-
-[lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31) 文中还涉及到知识点： 
-[位掩码](https://juejin.im/post/5dc2cc0b6fb9a04a916d0ba0)
-[mdn位掩码](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
+[手写深拷贝](https://github.com/NuoHui/fe-note/blob/master/docs/javascript/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D.md)
 [手写一个深拷贝](https://github.com/yygmind/blog/issues/29)
+
+[lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31) 该文中还涉及到知识点： 
+* [位掩码](https://juejin.im/post/5dc2cc0b6fb9a04a916d0ba0)
+* [mdn位掩码](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
+
 
 #### js数据类型转换
 [掘金](https://juejin.im/post/5d030e03518825361817032f)
@@ -97,13 +98,52 @@
 #### BFC
 [https://zhuanlan.zhihu.com/p/25321647](https://zhuanlan.zhihu.com/p/25321647)
 
+#### call 和apply的性能对比
+[call和apply的性能对比](https://jiayili.gitbooks.io/fe-study-easier/content/javascript%E5%9F%BA%E7%A1%80/wei-shi-yao-call-bi-apply-kuai-ff1f.html)
+
+#### 前端埋点为什么采用gif的方式
+问题：
+* 为什么不采用ajax
+* 采用gif的好处
+* 为什么使用sendBeacon
+[为什么前端监控要用GIF打点](https://mp.weixin.qq.com/s/v6R2w26qZkEilXY0mPUBCw?utm_source=tuicool&utm_medium=referral)
 
 
+#### 箭头函数
+[箭头函数与普通函数（function）的区别是什么](https://es6.ruanyifeng.com/#docs/function#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)
 
 
+#### a.b.c.d 与a[b][c][d]的性能？
+[a.b.c.d和a['b']['c']['d']，哪个性能更高](https://github.com/airuikun/Weekly-FE-Interview/issues/19)
+
+#### 将ES6转换成ES5的思路
+##### 涉及到的知识点
+* 编译原理，代码执行的流程
+* 每个阶段各自负责的内容： 编译器/引擎/作用域
+
+[ES6 代码转成 ES5 代码的实现思路是什么](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/112)
+
+
+#### token
+[基于 Token 的身份验证：JSON Web Token](https://ninghao.net/blog/2834)
+
+#### 1px问题
+[1像素边框问题](https://zhuanlan.zhihu.com/p/91830529)
+！！[使用Flexible实现手淘H5页面的终端适配](https://github.com/amfe/article/issues/17)
+
+
+#### webpack热更原理解析
+[Webpack HMR 原理解析](https://zhuanlan.zhihu.com/p/30669007)
+
+#### 为什么for比foreach性能更好？
+[为什么普通 for 循环的性能远远高于 forEach 的性能，请解释其中的原因](https://www.zhihu.com/question/263645361)
 
 ## 网络相关
 
+
+#### 手写一个promise
+[手写一个Promise](https://juejin.im/post/5aab8cb8f265da239a5f9064)
+[手写promise.finally](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/109)
 #### https握手过程
 [https原理](https://developers.weixin.qq.com/community/develop/article/doc/000046a5fdc7802a15f7508b556413)
 

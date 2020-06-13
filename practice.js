@@ -13,3 +13,25 @@ function flat (arr) {
     }
     return result;
 }
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var removeDuplicates = function(nums) {
+    var removeIndex = ''
+    nums.forEach((item, index) => {
+        if (nums.indexOf(item) !== index) {
+            removeIndex += (item + ',');
+        }
+    })
+    removeIndex.split(',').forEach((item) => {
+        if (item !== '') {
+            const index = nums.indexOf(Number(item));
+            nums.splice(index, 1)
+        }
+    })
+    return nums;
+};
+
+console.log(removeDuplicates([1,1,2]))
