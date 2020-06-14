@@ -11,15 +11,6 @@
 #### 位运算操作符
 [mdn位运算操作符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
-#### 如何实现深拷贝？
-` // todo 需要考虑的点： symbol`
-[手写深拷贝](https://github.com/NuoHui/fe-note/blob/master/docs/javascript/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D.md)
-[手写一个深拷贝](https://github.com/yygmind/blog/issues/29)
-
-[lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31) 该文中还涉及到知识点： 
-* [位掩码](https://juejin.im/post/5dc2cc0b6fb9a04a916d0ba0)
-* [mdn位掩码](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
-
 
 #### js数据类型转换
 [js数据类型转换](https://juejin.im/post/5d030e03518825361817032f)
@@ -35,12 +26,6 @@
 [详解JavaScript中的Event Loop](https://zhuanlan.zhihu.com/p/33058983)
 
 #### 数据结构---堆
-
-
-#### 如何实现async/await?
-
-[generator的原理](https://es6.ruanyifeng.com/#docs/generator)
-[async/await的实现](https://juejin.im/post/5d401ce4e51d4561d106cb63)
 
 
 #### 深入理解react setState机制
@@ -149,13 +134,6 @@
 
 #### node基础
 
-
-#### 手写一个promise
-[手写一个Promise](https://juejin.im/post/5aab8cb8f265da239a5f9064)
-[手写promise.finally](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/109)
-```// todo 实现promise.all```
-
-
 #### 柯里化
 [函数的柯里化](https://zhuanlan.zhihu.com/p/31271179)
 
@@ -176,6 +154,45 @@ let webSite = new Object();
 changeObjProperty(webSite);
 console.log(webSite.siteUrl);
 ```
+
+
+#### 正则
+[mdn-正则](https://www.xx.cn/api?keyword=&level1=&local_batch_id=&elective=800&local_province_id=33
+)
+
+#### 大文件上传
+[字节跳动面试官：请你实现一个大文件上传和断点续传](https://juejin.im/post/5dff8a26e51d4558105420ed)
+
+#### requestAnimationFrame
+[mdn-requestAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame)
+[requestAnimationFrame](https://javascript.ruanyifeng.com/htmlapi/requestanimationframe.html)
+
+
+## 手写代码专区
+
+[「中高级前端面试」JavaScript手写代码无敌秘籍](https://juejin.im/post/5c9c3989e51d454e3a3902b6)
+
+#### 如何实现深拷贝？
+` // todo 需要考虑的点： symbol`
+[手写深拷贝](https://github.com/NuoHui/fe-note/blob/master/docs/javascript/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D.md)
+[手写一个深拷贝](https://github.com/yygmind/blog/issues/29)
+
+[lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31) 该文中还涉及到知识点： 
+* [位掩码](https://juejin.im/post/5dc2cc0b6fb9a04a916d0ba0)
+* [mdn位掩码](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
+
+#### 如何实现async/await?
+
+[generator的原理](https://es6.ruanyifeng.com/#docs/generator)
+[async/await的实现](https://juejin.im/post/5d401ce4e51d4561d106cb63)
+
+#### 手写symbol
+
+#### 手写一个promise
+[手写一个Promise](https://juejin.im/post/5aab8cb8f265da239a5f9064)
+[手写promise.finally](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/109)
+[手写promise](https://juejin.im/post/5e84c4d36fb9a03c3e3f498c?utm_source=gold_browser_extension)
+```// todo 实现promise.all```
 
 ## 编程题
 
@@ -221,3 +238,6 @@ add(1, 2, 3);   // 6
 [头条正在面的哈希表问题](https://juejin.im/post/5ecb1db8f265da77147104c2?utm_source=gold_browser_extension)
 
 #### 时间复杂度 & 空间复杂度
+
+#### 洗牌算法
+[洗牌算法](https://zhuanlan.zhihu.com/p/60386034)
