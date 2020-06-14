@@ -12,6 +12,7 @@
 [mdn位运算操作符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
 #### 如何实现深拷贝？
+` // todo 需要考虑的点： symbol`
 [手写深拷贝](https://github.com/NuoHui/fe-note/blob/master/docs/javascript/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D.md)
 [手写一个深拷贝](https://github.com/yygmind/blog/issues/29)
 
@@ -21,12 +22,12 @@
 
 
 #### js数据类型转换
-[掘金](https://juejin.im/post/5d030e03518825361817032f)
+[js数据类型转换](https://juejin.im/post/5d030e03518825361817032f)
 
 #### 如何获取可枚举与不可枚举对象
 
 #### url从输入到呈现经过的过程
-[文章](https://juejin.im/post/5bbaa549e51d450e827b6b13)
+[url从输入到呈现经过的过程](https://juejin.im/post/5bbaa549e51d450e827b6b13)
 
 
 #### 事件轮询
@@ -41,9 +42,6 @@
 [generator的原理](https://es6.ruanyifeng.com/#docs/generator)
 [async/await的实现](https://juejin.im/post/5d401ce4e51d4561d106cb63)
 
-
-#### ab机器建立链接， b机器重启，a处于什么状态 
-[超纲](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/21)
 
 #### 深入理解react setState机制
 [深入setState](https://github.com/sisterAn/blog/issues/26) 文中还有```transcation```等知识
@@ -138,15 +136,75 @@
 #### 为什么for比foreach性能更好？
 [为什么普通 for 循环的性能远远高于 forEach 的性能，请解释其中的原因](https://www.zhihu.com/question/263645361)
 
-## 网络相关
+
+#### react生命周期
+[react官方文档](https://react.docschina.org/docs/react-component.htmls)
+
+
+#### 如何处理中文输入？
+[input 搜索如何防抖，如何处理中文输入](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/129)
+
+#### react合成事件
+[React合成事件和DOM原生事件混用须知](https://juejin.im/post/59db6e7af265da431f4a02ef)
+
+#### node基础
 
 
 #### 手写一个promise
 [手写一个Promise](https://juejin.im/post/5aab8cb8f265da239a5f9064)
 [手写promise.finally](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/109)
-#### https握手过程
-[https原理](https://developers.weixin.qq.com/community/develop/article/doc/000046a5fdc7802a15f7508b556413)
+```// todo 实现promise.all```
 
+
+#### 柯里化
+[函数的柯里化](https://zhuanlan.zhihu.com/p/31271179)
+
+#### 前端加密的场景及方法
+[介绍下前端加密的常见场景和方法](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/150)
+
+#### 一下题目输出的结果是什么？
+考察点： 
+* 函数的形参
+* 对象的引用
+```
+function changeObjProperty(o) {
+  o.siteUrl = "http://www.baidu.com"
+  o = new Object()
+  o.siteUrl = "http://www.google.com"
+} 
+let webSite = new Object();
+changeObjProperty(webSite);
+console.log(webSite.siteUrl);
+```
+
+## 编程题
+
+请实现一个 add 函数，满足以下功能
+[题目地址](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/134)
+```
+add(1); 	// 1
+add(1)(2);  	// 3
+add(1)(2)(3)；  // 6
+add(1)(2, 3);   // 6
+add(1, 2)(3);   // 6
+add(1, 2, 3);   // 6
+```
+
+## CSS相关
+
+#### BFC,IFC,GFC,FFC
+[BFC,IFC,GFC,FFC](https://www.bbsmax.com/A/1O5Erna8d7/)
+
+
+## 网络相关
+
+#### https握手过程
+[https加密过程](https://www.jianshu.com/p/e30a8c4fa329)
+[SSL或TLS握手的概述](https://github.com/lvwxx/blog/issues/3)
+[一次安全可靠的通信——HTTPS原理](https://developers.weixin.qq.com/community/develop/article/doc/000046a5fdc7802a15f7508b556413)
+
+#### ab机器建立链接， b机器重启，a处于什么状态 
+[超纲](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/21)
 
 #### http
 
@@ -155,7 +213,11 @@
 [三次握手与四次挥手](https://zhuanlan.zhihu.com/p/58603455)
 [https://zhuanlan.zhihu.com/p/25587986](https://zhuanlan.zhihu.com/p/25587986)
 
+#### 中间人攻击
+[介绍下 HTTPS 中间人攻击](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/142)
 ## 算法专栏
 
 #### 哈希表
 [头条正在面的哈希表问题](https://juejin.im/post/5ecb1db8f265da77147104c2?utm_source=gold_browser_extension)
+
+#### 时间复杂度 & 空间复杂度
