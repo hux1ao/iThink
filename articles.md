@@ -14,6 +14,7 @@
 
 #### js数据类型转换
 [js数据类型转换](https://juejin.im/post/5d030e03518825361817032f)
+[类型转换题目](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/229)
 
 #### 如何获取可枚举与不可枚举对象
 
@@ -132,6 +133,12 @@
 #### react合成事件
 [React合成事件和DOM原生事件混用须知](https://juejin.im/post/59db6e7af265da431f4a02ef)
 
+#### 大数据量渲染优化
+[虚拟列表](https://github.com/dwqs/blog/issues/70)
+
+#### 首屏优化
+[首屏速度优化](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/234)
+
 #### node基础
 
 #### 柯里化
@@ -162,6 +169,11 @@ console.log(webSite.siteUrl);
 
 #### 大文件上传
 [字节跳动面试官：请你实现一个大文件上传和断点续传](https://juejin.im/post/5dff8a26e51d4558105420ed)
+
+
+#### 服务端渲染
+
+
 
 #### requestAnimationFrame
 [mdn-requestAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame)
@@ -212,6 +224,8 @@ add(1, 2, 3);   // 6
 #### BFC,IFC,GFC,FFC
 [BFC,IFC,GFC,FFC](https://www.bbsmax.com/A/1O5Erna8d7/)
 
+#### flex
+[flex-阮一峰](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
 
 ## 网络相关
 
@@ -225,6 +239,24 @@ add(1, 2, 3);   // 6
 
 #### http
 
+#### http的发展过程
+
+```
+http/1 :
+
+默认不支持长连接，需要设置keep-alive参数指定
+强缓存expired、协商缓存last-modified\if-modified-since 有一定的缺陷
+http 1.1 :
+
+默认长连接(keep-alive)，http请求可以复用Tcp连接，但是同一时间只能对应一个http请求(http请求在一个Tcp中是串行的)
+增加了强缓存cache-control、协商缓存etag\if-none-match 是对http/1 缓存的优化
+http/2 :
+
+多路复用，一个Tcp中多个http请求是并行的 (雪碧图、多域名散列等优化手段http/2中将变得多余)
+二进制格式编码传输
+header压缩
+服务端推送
+```
 #### 三次握手与四次挥手
 [tcp的理解](https://juejin.im/post/5c078058f265da611c26c235)
 [三次握手与四次挥手](https://zhuanlan.zhihu.com/p/58603455)
@@ -238,6 +270,13 @@ add(1, 2, 3);   // 6
 [头条正在面的哈希表问题](https://juejin.im/post/5ecb1db8f265da77147104c2?utm_source=gold_browser_extension)
 
 #### 时间复杂度 & 空间复杂度
+[递归的时间复杂度](https://www.zhihu.com/question/63075755)
+[算法的时间与空间复杂度（一看就懂）](https://zhuanlan.zhihu.com/p/50479555)
 
 #### 洗牌算法
 [洗牌算法](https://zhuanlan.zhihu.com/p/60386034)
+
+
+## 数据结构专栏
+
+[JavaScript中的数据结构](https://github.com/lvwxx/blog/issues/1#Linked%20List)

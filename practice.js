@@ -102,3 +102,36 @@ function reverse (str) {
     const restString = reverse(str.slice(1, str.length));
     return restString.concat(str[0])
 }
+var entry = {
+    a: {
+        b: {
+            c: {
+                dd: 'abcdd'
+            }
+        },
+        d: {
+            xx: 'adxx'
+        },
+        e: 'ae'
+    }
+};
+
+// // 要求转换成如下对象
+// var output = {
+//     'a.b.c.dd': 'abcdd',
+//     'a.d.xx': 'adxx',
+//     'a.e': 'ae'
+// };
+// ```
+var result = {};
+function getOutput (entry, key = '') {
+    Object.keys(entry).forEach((item) => {
+        if (typeof entry[item] === 'object') {
+            getOutput(entry[item], key + '.' + item)
+        } else {
+            result[key + '.' + item] = entry[item];
+        }
+    })
+}
+getOutput(entry)
+console.log(result);
