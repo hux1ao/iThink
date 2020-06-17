@@ -1,5 +1,10 @@
 #### require和import的区别
-[require和import的区别](https://juejin.im/post/5ec212f15188256d7b1ede72?utm_source=gold_browser_extension)
+
+##### 考察点
+* 被导入的时候有什么区别？
+* 两者分别是怎么处理循环引用的？
+* 加载的时机分别是什么？
+
 [es6-module的加载与实现](https://es6.ruanyifeng.com/#docs/module-loader)
 
 #### 介绍set,weakSet,map,weakMap
@@ -9,21 +14,19 @@
 #### 位运算操作符
 [mdn位运算操作符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
-```todo 常见的位运算```
+```// todo 常见的位运算```
 
-
-#### 如何获取可枚举与不可枚举对象
 
 #### url从输入到呈现经过的过程
 [url从输入到呈现经过的过程](https://juejin.im/post/5bbaa549e51d450e827b6b13)
-
+[「一道面试题」输入URL到渲染全面梳理中-页面渲染篇](https://juejin.im/post/5e9f1db86fb9a03c85463560)
+[「一道面试题」输入URL到渲染全面梳理上-网络通信篇](https://juejin.im/post/5e9c48b2f265da47c558566b)
 
 #### 事件轮询
 [一次弄懂Event Loop](https://zhuanlan.zhihu.com/p/55511602)
 [详解JavaScript中的Event Loop](https://zhuanlan.zhihu.com/p/33058983)
 
 ```//todo node中的事件循环```
-#### 数据结构---堆
 
 
 #### 深入理解react setState机制
@@ -104,8 +107,10 @@
 ##### 涉及到的知识点
 * 编译原理，代码执行的流程
 * 每个阶段各自负责的内容： 编译器/引擎/作用域
+* AST
 
 [ES6 代码转成 ES5 代码的实现思路是什么](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/112)
+[掌握了AST，再也不怕被问babel，vue编译，Prettier等原理](https://mp.weixin.qq.com/s/fH2xYo_Bad0mgvo0OdYRZQ)
 
 
 #### token
@@ -238,8 +243,6 @@ console.log(webSite.siteUrl);
 #### 垃圾回收机制
 [Chrome 浏览器垃圾回收机制与内存泄漏分析](https://juejin.im/post/5db2beb8e51d455b450a64b4#heading-9)
 
-#### AST
-[掌握了AST，再也不怕被问babel，vue编译，Prettier等原理](https://mp.weixin.qq.com/s/fH2xYo_Bad0mgvo0OdYRZQ)
 
 
 ## 编程题
@@ -346,3 +349,4 @@ https://www.nowcoder.com/discuss/292850
 ## 数据结构专栏
 
 [JavaScript中的数据结构](https://github.com/lvwxx/blog/issues/1#Linked%20List)
+```//todo 数据结构---堆```
