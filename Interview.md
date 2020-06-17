@@ -1,13 +1,17 @@
 ## kuaishou
 
+####一面
 
-1. console.log(typeof typeof typeof null); 打印出什么结果
 
-2. 'abcdcba'.replace(/c/, "h"); 返回什么结果
-
-asdfsadf"123123'123"safasf
-
-3. 
+##### 自我介绍
+##### 聊项目
+```
+console.log(typeof typeof typeof null); 打印出什么结果
+```
+```
+'abcdcba'.replace(/c/, "h"); 返回什么结果
+```
+```
 <style>
 
    .classA { color:blue; }
@@ -17,65 +21,76 @@ asdfsadf"123123'123"safasf
    </style>
 
    <p class="classB classA">hello</p>
-
-元素p内的文字最终什么颜色
-
-
-1.
+   元素p内的文字最终什么颜色
+```
+```
 let a = 1;
-    function fn() {
+function fn() {
+  console.log(a);
+  let a = 2;
+}
 
-      console.log(a);
-      let a = 2;
+fn();
 
-    }
-
-    fn();
-
-    打印什么结果，为什么?
-
-2. debounce
-
-3. 已知斐波那契数列规律为1,1,2,3,5,8...，实现一个函数function fib(n: number): number; 如调用fib(3)返回2，fib(4)返回3。
-
-4.
+打印什么结果，为什么?
+```
+```
+手写debounce
+```
+```
+已知斐波那契数列规律为1,1,2,3,5,8...，实现一个函数function fib(n: number): number; 如调用fib(3)返回2，fib(4)返回3。
+```
+```
+写出下列代码的执行结果
 setTimeout(() => {
   setTimeout(() => {
     console.log(1);
   }, 0);
 }, 0);
-
 setTimeout(() => {
   console.log(2);
 }, 100);
+```
 
-
-Promise.all
-function allPromise(list: Promise<any>[]): Promise<any> {
-
-}
-
+```
+手写promise.all
+```
+```
+promise 异常捕获机制， catch之后能不能在执行.then？
 axios.get('/api')
     .then(() => { /* biz */ new Error('xx') })
     .then(() => { /* biz */  ?? })
     .then(() => { /* biz */ })
+```
 
+#### 二面
 
-快手二轮
+```
+聊
+```
+```
+setState机制以及后续的逻辑
+```
+```
+虚拟dom，diff等细节
+```
 
-
-setState机制
-
-redux 和 同类框架
-
+```
+redux 和 同类框架的比较
+```
 
 
 ```
 实现一个函数 findLastIndex(), 返回指定数在“有序”数组中最后一次出现位置的索引
 如findLastIndex([1,2,3,3,3,4,5], 3), 返回4
 
+解决方案1：
+function findLastIndex (arr, value) {
+  arr = arr.reverse();
+  const index = arr.indexOf(value);
+  return arr.length - index;
+}
 ```
-
 
 ```
 请实现一个cacheRequest(url, callback)请求缓存方法，保证当使用ajax时，对于同一个API实际在网络层只发出一次请求以节省网络流量（假设已存在request底层方法用于封装ajax请求，调用格式为：request(url, data => {})
@@ -96,4 +111,6 @@ cacheRequest('/user', data => {
 介绍项目
 ```
 
-node怎么捕获异常？
+```
+node怎么捕获异常？哪些异常能被捕获到，哪些异常不能被捕获到
+```

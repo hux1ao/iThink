@@ -57,7 +57,6 @@ function fn (a = [], b = []) {
     }
     return result;
 }
-console.log(fn([1, 2], [4]))
 
 function findMidValue(nums1, nums2) {
 
@@ -133,5 +132,57 @@ function getOutput (entry, key = '') {
         }
     })
 }
-getOutput(entry)
-console.log(result);
+
+
+// 实现一个函数 findLastIndex(), 返回指定数在“有序”数组中最后一次出现位置的索引
+// 如findLastIndex([1,2,3,3,3,4,5], 3), 返回4
+function findLastIndex (arr, value) {
+    var result = 0;
+    foo(arr, value, result)
+    return result;
+}
+function foo (arr, value, result) {
+    const arrLength = arr.length;
+    const middleIndex = Math.floor((arrLength / 2));
+    if (value < arr[middleIndex]) {
+        findLastIndex(arr.slice(0, middleIndex), value, result)
+    } else if (value > arr[middleIndex]) {
+        result = result + middleIndex + 1;
+        findLastIndex(arr.slice(middleIndex + 1, arrLength), value, result)
+    } else {
+        result = result + middleIndex;
+    }
+    return result;
+}
+
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var longestPalindrome = function(s) {
+    let result = '';
+    for (let i in s) {
+        var lastIndex = s.lastIndexOf(s[i]);
+        while (lastIndex >= i) {
+            const splitedString = s.slice(i, lastIndex + 1);
+            if (isHuiWen(splitedString)) {
+                if (result.length < splitedString.length) {
+                    result = splitedString
+                } else {
+                    break;
+                }
+            } else {
+                lastIndex = s.slice(0, lastIndex).lastIndexOf(s[i]);
+            }
+        }
+    }
+    return result;
+};
+function isHuiWen (s) {
+    if (s.split('').reverse().join('') === s) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(longestPalindrome('ac'))

@@ -336,6 +336,13 @@ header压缩
 ```
 如何将 [{id: 1}, {id: 2, pId: 1}, ...] 的重复数组（有重复数据）转成树形结构的数组 [{id: 1, child: [{id: 2, pId: 1}]}, ...] （需要去重）
 ```
+
+```
+// todo 待刷题目
+https://juejin.im/post/5ed32e0151882542fd351696#greed
+https://www.nowcoder.com/discuss/292850
+```
+
 ## 数据结构专栏
 
 [JavaScript中的数据结构](https://github.com/lvwxx/blog/issues/1#Linked%20List)
