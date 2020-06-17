@@ -59,3 +59,41 @@ axios.get('/api')
     .then(() => { /* biz */ new Error('xx') })
     .then(() => { /* biz */  ?? })
     .then(() => { /* biz */ })
+
+
+快手二轮
+
+
+setState机制
+
+redux 和 同类框架
+
+
+
+```
+实现一个函数 findLastIndex(), 返回指定数在“有序”数组中最后一次出现位置的索引
+如findLastIndex([1,2,3,3,3,4,5], 3), 返回4
+
+```
+
+
+```
+请实现一个cacheRequest(url, callback)请求缓存方法，保证当使用ajax时，对于同一个API实际在网络层只发出一次请求以节省网络流量（假设已存在request底层方法用于封装ajax请求，调用格式为：request(url, data => {})
+
+比如调用方代码如下
+
+// a.js
+cacheRequest('/user', data => {
+    console.log('我是从A中请求的user，数据为' + data);
+})
+// b.js
+cacheRequest('/user', data => {
+    console.log('我是从B中请求的user，数据为' + data);
+}
+```
+
+```
+介绍项目
+```
+
+node怎么捕获异常？

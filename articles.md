@@ -5,16 +5,12 @@
 #### 介绍set,weakSet,map,weakMap
 [set-map](https://es6.ruanyifeng.com/#docs/set-map)
 
-#### 深度优先搜索和广度优先搜索
-[深度优先搜索和广度优先搜索](https://github.com/sisterAn/blog/issues/25)
 
 #### 位运算操作符
 [mdn位运算操作符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
+```todo 常见的位运算```
 
-#### js数据类型转换
-[js数据类型转换](https://juejin.im/post/5d030e03518825361817032f)
-[类型转换题目](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/229)
 
 #### 如何获取可枚举与不可枚举对象
 
@@ -26,6 +22,7 @@
 [一次弄懂Event Loop](https://zhuanlan.zhihu.com/p/55511602)
 [详解JavaScript中的Event Loop](https://zhuanlan.zhihu.com/p/33058983)
 
+```//todo node中的事件循环```
 #### 数据结构---堆
 
 
@@ -65,10 +62,11 @@
 #### virtual dom真的比原生dom快吗？
 [Virtual DOM 真的比操作原生 DOM 快吗？](https://www.zhihu.com/question/31809713/answer/53544875)
 [怎么理解虚拟dom](https://www.zhihu.com/question/29504639)
+```// todo 查看snabbdom源码```
 
 #### 重排与重绘
 
-什么情况下会导致重排与重绘？
+```// todo 什么情况下会导致重排与重绘？```
 [介绍下重绘和回流（Repaint & Reflow），以及如何进行优化](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/24)
 
 #### 浏览器缓存机制
@@ -78,6 +76,8 @@
 
 [js 运算符+== <>中的隐式数据类型转换](https://zhuanlan.zhihu.com/p/80691557)
 [JavaScript 运算符规则与隐式类型转换详解](https://zhuanlan.zhihu.com/p/29064256)
+[js数据类型转换](https://juejin.im/post/5d030e03518825361817032f)
+[类型转换题目](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/229)
 
 #### BFC
 [https://zhuanlan.zhihu.com/p/25321647](https://zhuanlan.zhihu.com/p/25321647)
@@ -173,12 +173,33 @@ console.log(webSite.siteUrl);
 
 #### 服务端渲染
 
+#### nodejs错误处理
+[node错误处理](https://www.jianshu.com/p/bdf31d835685)
 
+#### 301/302对SEO的影响
+[思维导图](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/241)
 
 #### requestAnimationFrame
 [mdn-requestAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame)
 [requestAnimationFrame](https://javascript.ruanyifeng.com/htmlapi/requestanimationframe.html)
+[网页骨架屏自动生成方案（dps）](https://zhuanlan.zhihu.com/p/74403911)
 
+#### 自动化生成骨架屏的方案
+[一种自动化生成骨架屏的方案](https://github.com/Jocs/jocs.github.io/issues/22)
+[page-skeleton-webpack-plugin](https://github.com/ElemeFE/page-skeleton-webpack-plugin#basic-use)
+
+#### performanceApi
+[Web 性能优化-首屏和白屏时间](https://lz5z.com/Web%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-%E9%A6%96%E5%B1%8F%E5%92%8C%E7%99%BD%E5%B1%8F%E6%97%B6%E9%97%B4/)
+
+[在单页应用中，如何优雅的上报前端性能数据](https://juejin.im/post/5c3bebf2f265da613f2fae54)
+
+
+```// todo eslint的使用与原理```
+```// todo webpack的过程```
+``` // todo ssr```
+``` // todo cdn的原理```
+``` // todo 多线程与多进程的区别```
+```// todo 垃圾回收和内存泄露```
 
 ## 手写代码专区
 
@@ -193,6 +214,9 @@ console.log(webSite.siteUrl);
 * [位掩码](https://juejin.im/post/5dc2cc0b6fb9a04a916d0ba0)
 * [mdn位掩码](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
+#### 手写JSON.stringify && JSON.parse
+
+[手写源码系列（三）——JSON.stringfy和JSON.parse](https://zhuanlan.zhihu.com/p/70361133)
 #### 如何实现async/await?
 
 [generator的原理](https://es6.ruanyifeng.com/#docs/generator)
@@ -205,6 +229,18 @@ console.log(webSite.siteUrl);
 [手写promise.finally](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/109)
 [手写promise](https://juejin.im/post/5e84c4d36fb9a03c3e3f498c?utm_source=gold_browser_extension)
 ```// todo 实现promise.all```
+
+``` // todo 实现extends```
+
+#### base64的编码与解码
+[Base64的编码与解码](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowBase64/Base64_encoding_and_decoding)
+
+#### 垃圾回收机制
+[Chrome 浏览器垃圾回收机制与内存泄漏分析](https://juejin.im/post/5db2beb8e51d455b450a64b4#heading-9)
+
+#### AST
+[掌握了AST，再也不怕被问babel，vue编译，Prettier等原理](https://mp.weixin.qq.com/s/fH2xYo_Bad0mgvo0OdYRZQ)
+
 
 ## 编程题
 
@@ -229,6 +265,7 @@ add(1, 2, 3);   // 6
 
 ## 网络相关
 
+```// todo DNS解析过程```
 #### https握手过程
 [https加密过程](https://www.jianshu.com/p/e30a8c4fa329)
 [SSL或TLS握手的概述](https://github.com/lvwxx/blog/issues/3)
@@ -264,6 +301,16 @@ header压缩
 
 #### 中间人攻击
 [介绍下 HTTPS 中间人攻击](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/142)
+
+
+#### http,https,http1.0/1.1/2.0的区别
+
+[HTTP/1.0、HTTP/1.1、HTTP/2、HTTPS](https://zhuanlan.zhihu.com/p/43787334)
+
+
+``` // todo CSRF XSS```
+
+
 ## 算法专栏
 
 #### 哈希表
@@ -277,6 +324,18 @@ header压缩
 [洗牌算法](https://zhuanlan.zhihu.com/p/60386034)
 
 
+#### 斐波拉切数列（快手）
+[leet-code斐波拉切数列](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/solution/)
+
+
+#### 深度优先搜索和广度优先搜索
+[深度优先搜索和广度优先搜索](https://github.com/sisterAn/blog/issues/25)
+[leetcode深度优先搜索](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)
+
+#### hash表
+```
+如何将 [{id: 1}, {id: 2, pId: 1}, ...] 的重复数组（有重复数据）转成树形结构的数组 [{id: 1, child: [{id: 2, pId: 1}]}, ...] （需要去重）
+```
 ## 数据结构专栏
 
 [JavaScript中的数据结构](https://github.com/lvwxx/blog/issues/1#Linked%20List)
