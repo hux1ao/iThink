@@ -2,14 +2,14 @@
 
 ####一面
 
-
-##### 自我介绍
-##### 聊项目
+```
+自我介绍, 聊项目, 主要对行为轨迹收集策略优化 & 发布速度优化项目感兴趣
+```
 ```
 console.log(typeof typeof typeof null); 打印出什么结果
 ```
 ```
-'abcdcba'.replace(/c/, "h"); 返回什么结果
+'abcdcba'.replace(/c/, "h"); 返回什么结果， 全局替换c该怎么做？
 ```
 ```
 <style>
@@ -118,3 +118,226 @@ cacheRequest('/user', data => {
 node怎么捕获异常？哪些异常能被捕获到，哪些异常不能被捕获到
 ```
 
+
+
+
+## DIDI
+
+#### 一面
+```
+自我介绍， 聊项目，主要是交易系统， 怎么优化， 怎么重构，问题都比较水
+```
+
+```
+var list = [
+  {
+    id: 1,
+    par2ent: 0
+  },
+  {
+    id: 2,
+    parent: 1
+  },
+  {
+    id: 3,
+    parent: 1
+  },
+  {
+    id: 4,
+    parent: 2
+  },
+  {
+    id: 5,
+    parent: 2
+  },
+  {
+    id: 6,
+    parent: 0
+  },
+  {
+    id: 7,
+    parent: 0
+  },
+  {
+    id: 8,
+    parent: 7
+  },
+  {
+    id: 9,
+    parent: 8
+  },
+  {
+    id: 10,
+    parent: 0
+  }
+]
+
+function covertListToTree(list) {
+  // todo 实现这个方法
+}
+
+var tree = covertListToTree(list)
+
+// result
+[{
+    "id": 1,
+    "parent": 0,
+    "child": [
+        {
+            "id": 2,
+            "parent": 1,
+            "child": [
+                {
+                    "id": 4,
+                    "parent": 2
+                }, {
+                    "id": 5,
+                    "parent": 2
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "parent": 1
+        }
+    ]
+}, {
+    "id": 6,
+    "parent": 0
+}, {
+    "id": 7,
+    "parent": 0,
+    "child": [
+        {
+            "id": 8,
+            "parent": 7,
+            "child": [
+                {
+                    "id": 9,
+                    "parent": 8
+                }
+            ]
+        }
+    ]
+}, {
+    "id": 10,
+    "parent": 0
+}];
+```
+
+
+```
+const fs = require("fs");
+
+fs.readFile('./index.js', function(err, file) {
+  console.log(file, 'file');
+})
+
+function prosimeFy(fn) {
+   // todo 实现这个方法
+}
+
+
+const fsPromiseReadFile = prosimeFy(fs.readFile);
+fsPromiseReadFile('./index.js').then((err, file) => {
+  console.log(file, 'file');
+})
+```
+
+```
+为什么推动团队使用react-hook？
+```
+
+```
+react-fiber的了解？// 这个没答出来
+```
+
+#### 二面
+
+```
+git相关操作
+merge&rebase
+
+reset&revert
+
+删除分支
+```
+
+```
+linux相关操作
+pwd
+netstat, ps
+ifconfig/ipaddress
+tail -f/more/less/cat
+```
+
+```
+setState什么时候是同步的，什么时候是异步的？
+```
+```
+react-memo?
+```
+
+```
+手撕深克隆
+```
+```
+完成retry(fn, times)
+```
+## 知乎
+
+#### 一面
+
+
+```
+fiber
+```
+
+```
+https，非对称加密过程
+```
+```
+事件轮询
+```
+
+```
+react 事件中this指向问题
+```
+
+```
+跨域问题解决方案
+```
+
+```
+promise-catch的返回值是啥
+```
+```
+前端缓存
+```
+```
+option请求
+```
+```
+hook
+```
+```
+箭头函数
+```
+```
+promise
+```
+
+```
+let,var的区别
+```
+```
+组件传值的问题。
+```
+```
+this指向问题
+let a = {
+  b: function () { return this},
+  c: () => {return this}
+}
+var d = a.b;
+```

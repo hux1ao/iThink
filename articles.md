@@ -65,6 +65,7 @@
 #### virtual dom真的比原生dom快吗？
 [Virtual DOM 真的比操作原生 DOM 快吗？](https://www.zhihu.com/question/31809713/answer/53544875)
 [怎么理解虚拟dom](https://www.zhihu.com/question/29504639)
+```// todo https://mp.weixin.qq.com/s/zCGQEpEGJYQWMMvZfyUYHg```
 ```// todo 查看snabbdom源码```
 
 #### 重排与重绘
@@ -108,7 +109,12 @@
 * 编译原理，代码执行的流程
 * 每个阶段各自负责的内容： 编译器/引擎/作用域
 * AST
-
+```
+ES6代码输入
+babylon 进行解析得到 AST
+plugin 用 babel-traverse 对 AST 树进行遍历转译,得到新的AST树
+用 babel-generator 通过 AST 树生成 ES5 代码
+```
 [ES6 代码转成 ES5 代码的实现思路是什么](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/112)
 [掌握了AST，再也不怕被问babel，vue编译，Prettier等原理](https://mp.weixin.qq.com/s/fH2xYo_Bad0mgvo0OdYRZQ)
 
@@ -198,6 +204,15 @@ console.log(webSite.siteUrl);
 
 [在单页应用中，如何优雅的上报前端性能数据](https://juejin.im/post/5c3bebf2f265da613f2fae54)
 
+#### react fiber
+[浅析React Diff 与 Fiber](https://zhuanlan.zhihu.com/p/58863799)
+[React Fiber 原理介绍](https://segmentfault.com/a/1190000018250127)
+[React Fiber](https://juejin.im/post/5ab7b3a2f265da2378403e57)
+
+#### react-this绑定问题
+[理解：为什么React事件处理中要绑定this](https://juejin.im/post/5ec8fa04e51d45784f7ffab8)
+[为什么React组件点击事件回调函数会需要绑定this](http://zachrey.win/%E4%B8%BA%E4%BB%80%E4%B9%88React%E7%BB%84%E4%BB%B6%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E4%BC%9A%E9%9C%80%E8%A6%81%E7%BB%91%E5%AE%9Athis.html)
+[Understanding JavaScript Bind ()](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
 
 ```// todo eslint的使用与原理```
 ```// todo webpack的过程```
@@ -227,8 +242,6 @@ console.log(webSite.siteUrl);
 [generator的原理](https://es6.ruanyifeng.com/#docs/generator)
 [async/await的实现](https://juejin.im/post/5d401ce4e51d4561d106cb63)
 
-#### 手写symbol
-
 #### 手写一个promise
 [手写一个Promise](https://juejin.im/post/5aab8cb8f265da239a5f9064)
 [手写promise.finally](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/109)
@@ -237,14 +250,19 @@ console.log(webSite.siteUrl);
 
 ``` // todo 实现extends```
 
+```// todo 手写symbol```
+``` // todo 实现大整数相乘```
 #### base64的编码与解码
 [Base64的编码与解码](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowBase64/Base64_encoding_and_decoding)
 
 #### 垃圾回收机制
 [Chrome 浏览器垃圾回收机制与内存泄漏分析](https://juejin.im/post/5db2beb8e51d455b450a64b4#heading-9)
 
+#### cookie与session的区别
+[COOKIE和SESSION有什么区别？](https://www.zhihu.com/question/19786827)
 
-
+#### webpack如何实现动态加载的？
+[webpack是如何实现动态导入的](https://juejin.im/post/5d26e7d1518825290726f67a)
 ## 编程题
 
 请实现一个 add 函数，满足以下功能
@@ -350,3 +368,7 @@ https://www.nowcoder.com/discuss/292850
 
 [JavaScript中的数据结构](https://github.com/lvwxx/blog/issues/1#Linked%20List)
 ```//todo 数据结构---堆```
+
+
+## 安全专栏
+[前端安全面试题](https://www.cxymsg.com/guide/security.html#%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8F%AF%E8%83%BD%E5%BC%95%E8%B5%B7%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8%E7%9A%84%E7%9A%84%E9%97%AE%E9%A2%98)

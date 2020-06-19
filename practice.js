@@ -186,3 +186,38 @@ function isHuiWen (s) {
     }
 }
 console.log(longestPalindrome('ac'))
+
+
+function retry (fn, times, currentTime = 0) {
+    return new Promise((resolve, reject) => {
+        fn().then(() => {
+            resolve();
+        }).catch(err => {
+            if (currentTime >= time) {
+                reject(err);
+            } else {
+                retry(fn, times, 1)
+            }
+        })
+    })
+}
+
+
+function cloneDeep (obj) {
+    const result = {}
+    const hashMap = new Map();
+    Object.keys(obj).forEach((item) => {
+        if (typeof obj[item] === 'funciton') {
+            result[item] = eval(obj[item].toString());
+        } else if (typeof obj[item] === 'object') {
+            if (Array.isArray(obj[item])) {
+                result[item] = obj[item];
+            } else {
+                result[item] = cloneDeep(obj[item]);
+            }
+            hashMap.set(obj[item]);
+        } else {
+            result[item] = obj[item]
+        }
+    })
+}
