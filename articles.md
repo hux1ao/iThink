@@ -213,6 +213,18 @@ console.log(webSite.siteUrl);
 [理解：为什么React事件处理中要绑定this](https://juejin.im/post/5ec8fa04e51d45784f7ffab8)
 [为什么React组件点击事件回调函数会需要绑定this](http://zachrey.win/%E4%B8%BA%E4%BB%80%E4%B9%88React%E7%BB%84%E4%BB%B6%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E4%BC%9A%E9%9C%80%E8%A6%81%E7%BB%91%E5%AE%9Athis.html)
 [Understanding JavaScript Bind ()](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
+#### base64的编码与解码
+[Base64的编码与解码](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowBase64/Base64_encoding_and_decoding)
+
+#### 垃圾回收机制
+[Chrome 浏览器垃圾回收机制与内存泄漏分析](https://juejin.im/post/5db2beb8e51d455b450a64b4#heading-9)
+
+#### cookie与session的区别
+[COOKIE和SESSION有什么区别？](https://www.zhihu.com/question/19786827)
+
+#### webpack如何实现动态加载的？
+[webpack是如何实现动态导入的](https://juejin.im/post/5d26e7d1518825290726f67a)
+
 
 ```// todo eslint的使用与原理```
 ```// todo webpack的过程```
@@ -226,10 +238,14 @@ console.log(webSite.siteUrl);
 [「中高级前端面试」JavaScript手写代码无敌秘籍](https://juejin.im/post/5c9c3989e51d454e3a3902b6)
 
 #### 如何实现深拷贝？
-` // todo 需要考虑的点： symbol`
+##### 需要考虑的点
+* symbol
+* function（改变this的指向）
+* 循环引用
+* 数组
+
 [手写深拷贝](https://github.com/NuoHui/fe-note/blob/master/docs/javascript/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D.md)
 [手写一个深拷贝](https://github.com/yygmind/blog/issues/29)
-
 [lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31) 该文中还涉及到知识点： 
 * [位掩码](https://juejin.im/post/5dc2cc0b6fb9a04a916d0ba0)
 * [mdn位掩码](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
@@ -247,25 +263,31 @@ console.log(webSite.siteUrl);
 [手写promise.finally](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/109)
 [手写promise](https://juejin.im/post/5e84c4d36fb9a03c3e3f498c?utm_source=gold_browser_extension)
 ```// todo 实现promise.all```
+#### 手写instanceOf
+```
+function myInstanceof(left, right) {
+    if(typeof left !== 'object' || left == null) {
+        return false
+    }
+    let proto = Object.getPrototypeOf(left);
+    while(proto) {
+        if(proto === right.prototype) {
+            return true
+        }
+        proto = Object.getPrototypeOf(proto)
+    }
+    return false;
+}
+```
+#### 手写extends
+[面试官问：JS的继承](https://zhuanlan.zhihu.com/p/57336944)
 
-``` // todo 实现extends```
 
 ```// todo 手写symbol```
 ``` // todo 实现大整数相乘```
-#### base64的编码与解码
-[Base64的编码与解码](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowBase64/Base64_encoding_and_decoding)
 
-#### 垃圾回收机制
-[Chrome 浏览器垃圾回收机制与内存泄漏分析](https://juejin.im/post/5db2beb8e51d455b450a64b4#heading-9)
 
-#### cookie与session的区别
-[COOKIE和SESSION有什么区别？](https://www.zhihu.com/question/19786827)
-
-#### webpack如何实现动态加载的？
-[webpack是如何实现动态导入的](https://juejin.im/post/5d26e7d1518825290726f67a)
-## 编程题
-
-请实现一个 add 函数，满足以下功能
+#### 请实现一个 add 函数，满足以下功能
 [题目地址](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/134)
 ```
 add(1); 	// 1

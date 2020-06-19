@@ -188,36 +188,61 @@ function isHuiWen (s) {
 console.log(longestPalindrome('ac'))
 
 
-function retry (fn, times, currentTime = 0) {
+function retry (fn, times) {
+    let currentTime = 0
     return new Promise((resolve, reject) => {
-        fn().then(() => {
-            resolve();
-        }).catch(err => {
-            if (currentTime >= time) {
-                reject(err);
-            } else {
-                retry(fn, times, 1)
-            }
-        })
-    })
-}
-
-
-function cloneDeep (obj) {
-    const result = {}
-    const hashMap = new Map();
-    Object.keys(obj).forEach((item) => {
-        if (typeof obj[item] === 'funciton') {
-            result[item] = eval(obj[item].toString());
-        } else if (typeof obj[item] === 'object') {
-            if (Array.isArray(obj[item])) {
-                result[item] = obj[item];
-            } else {
-                result[item] = cloneDeep(obj[item]);
-            }
-            hashMap.set(obj[item]);
-        } else {
-            result[item] = obj[item]
+        function exeFn () {
+            fn.then((res) => {
+                resolve();
+            }).catch(err => {
+                if (currentTime >= time) {
+                    currentTime++;
+                    exeFn();
+                }
+            })
         }
+        exeFn()
     })
 }
+
+// await/async
+function myAsync () {
+    spawn(function *() {
+        xxx
+    })
+}
+
+function spawn (fn) {
+    const gen = fn();
+    return new Promise((resolve, reject) => {
+        function step (fn) {
+            let next
+            try {
+                next = fn();
+            } catch(e) {
+                reject(e)
+            }
+            if (next.done) {
+                resolve(next.value);
+            }
+            next.value.then(() => {
+                step(gen.next)
+            }).catch(err => {
+                reject(err)
+            })
+        }
+        step(gen.next)
+    })
+}
+
+
+// 柯里化
+
+function currying(fn, length) {
+    length = length || fn.length; 	// 注释 1
+    return function (...args) {			// 注释 2
+      return args.length >= length	// 注释 3
+          ? fn.apply(this, args)			// 注释 4
+        : currying(fn.bind(this, ...args), length - args.length) // 注释 5
+    }
+  }
