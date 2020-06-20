@@ -151,9 +151,7 @@ plugin 用 babel-traverse 对 AST 树进行遍历转译,得到新的AST树
 [首屏速度优化](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/234)
 
 #### node基础
-
-#### 柯里化
-[函数的柯里化](https://zhuanlan.zhihu.com/p/31271179)
+[前端知识体系-NodeJS相关】NodeJS基础知识全面总结](https://www.cnblogs.com/fecommunity/p/11922208.html)
 
 #### 前端加密的场景及方法
 [介绍下前端加密的常见场景和方法](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/150)
@@ -224,14 +222,14 @@ console.log(webSite.siteUrl);
 
 #### webpack如何实现动态加载的？
 [webpack是如何实现动态导入的](https://juejin.im/post/5d26e7d1518825290726f67a)
-
+[深入理解React：懒加载（lazy）实现原理](https://www.bbsmax.com/A/RnJWynkydq/)
+[webpack 中，module，chunk 和 bundle 的区别是什么？](https://www.cnblogs.com/skychx/p/webpack-module-chunk-bundle.html)
 
 ```// todo eslint的使用与原理```
 ```// todo webpack的过程```
 ``` // todo ssr```
 ``` // todo cdn的原理```
 ``` // todo 多线程与多进程的区别```
-```// todo 垃圾回收和内存泄露```
 
 ## 手写代码专区
 
@@ -250,6 +248,33 @@ console.log(webSite.siteUrl);
 * [位掩码](https://juejin.im/post/5dc2cc0b6fb9a04a916d0ba0)
 * [mdn位掩码](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
+#### 柯里化
+[函数的柯里化](https://zhuanlan.zhihu.com/p/31271179)
+```
+function curry(fn, args) {
+    var length = fn.length;
+    var args = args || [];
+    return function(){
+        newArgs = args.concat(Array.prototype.slice.call(arguments));
+        if (newArgs.length < length) {
+            return curry.call(this,fn,newArgs);
+        }else{
+            return fn.apply(this,newArgs);
+        }
+    }
+}
+
+function multiFn(a, b, c) {
+    return a * b * c;
+}
+
+var multi = curry(multiFn);
+
+multi(2)(3)(4);
+multi(2,3,4);
+multi(2)(3,4);
+multi(2,3)(4);
+```
 #### 手写JSON.stringify && JSON.parse
 
 [手写源码系列（三）——JSON.stringfy和JSON.parse](https://zhuanlan.zhihu.com/p/70361133)
@@ -281,7 +306,21 @@ function myInstanceof(left, right) {
 ```
 #### 手写extends
 [面试官问：JS的继承](https://zhuanlan.zhihu.com/p/57336944)
+[傻傻分不清的__proto__与prototype](https://segmentfault.com/a/1190000011801127?v=20171103)
 
+```
+function _inherits(Child, Parent){
+    // Object.create
+    Child.prototype = Object.create(Parent.prototype);
+    // __proto__
+    // Child.prototype.__proto__ = Parent.prototype;
+    Child.prototype.constructor = Child;
+    // ES6
+    // Object.setPrototypeOf(Child, Parent);
+    // __proto__
+    Child.__proto__ = Parent;
+}
+```
 
 ```// todo 手写symbol```
 ``` // todo 实现大整数相乘```

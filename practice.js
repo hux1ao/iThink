@@ -235,14 +235,40 @@ function spawn (fn) {
     })
 }
 
-
-// 柯里化
-
-function currying(fn, length) {
-    length = length || fn.length; 	// 注释 1
-    return function (...args) {			// 注释 2
-      return args.length >= length	// 注释 3
-          ? fn.apply(this, args)			// 注释 4
-        : currying(fn.bind(this, ...args), length - args.length) // 注释 5
+function curry(fn, args) {
+    var length = fn.length;
+    var args = args || [];
+    return function(){
+        newArgs = args.concat(Array.prototype.slice.call(arguments));
+        if (newArgs.length < length) {
+            return curry.call(this,fn,newArgs);
+        }else{
+            return fn.apply(this,newArgs);
+        }
     }
-  }
+}
+
+function multiFn(a, b, c) {
+    return a * b * c;
+}
+
+var multi = curry(multiFn);
+
+multi(2)(3)(4);
+multi(2,3,4);
+multi(2)(3,4);
+multi(2,3)(4);
+
+
+function foo (arr1, arr2) {
+    const result = arr1.filter(item => {
+        return arr2.includes(item);
+    });
+    const resultnew = result.filter((item, index) => {
+        return result.indexOf(item) === index;
+    })
+    return resultnew;
+}
+
+
+// git rebase
