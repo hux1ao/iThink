@@ -14,7 +14,7 @@ function sameVnode (vnode1: VNode, vnode2: VNode): boolean {
 
 如果两个元素是相同的key，且满足第一点元素类型相同，则会被认为是两个相同的元素。 如果是相同的元素，则只更新，如果不是，则重新渲染该元素
 
-### why some say use key can slow down our component?
+### why some say using key can slow down our component?
 
 首先，在不添加key的时候，react会默认帮我们添加数组下标作为key。
 
