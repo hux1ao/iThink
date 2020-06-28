@@ -1,3 +1,4 @@
+## 前端基础
 #### require和import的区别
 
 ##### 考察点
@@ -49,10 +50,13 @@
 * npm install 基本流程？
 * 模块扁平化的过程？
 
+#### 浮点数相加
+[IEEE754 浮点数格式 与 Javascript number 的特性](https://segmentfault.com/a/1190000008268668)
 #### 为什么使用hook
 
 [从Mixin到HOC再到Hook](https://juejin.im/post/5cad39b3f265da03502b1c0a)
 [Why React Hooks, and how did we even get here?](https://www.freecodecamp.org/news/why-react-hooks-and-how-did-we-even-get-here-aa5ed5dc96af/)
+[React Hooks 详解 【近 1W 字】+ 项目实战](https://juejin.im/post/5dbbdbd5f265da4d4b5fe57d)
 
 #### 发布订阅者模式vs 观察者模式
 
@@ -77,6 +81,7 @@
 [Virtual DOM 真的比操作原生 DOM 快吗？](https://www.zhihu.com/question/31809713/answer/53544875)
 [怎么理解虚拟dom](https://www.zhihu.com/question/29504639)
 [react的diff 从O(n^3)到 O(n) ，请问 O(n^3) 和O(n) 是怎么算出来？](https://www.zhihu.com/question/66851503)
+[让虚拟DOM和DOM-diff不再成为你的绊脚石](https://juejin.im/post/5c8e5e4951882545c109ae9c?utm_source=gold_browser_extension)
 ```// todo https://mp.weixin.qq.com/s/zCGQEpEGJYQWMMvZfyUYHg```
 ```// todo 查看snabbdom源码```
 #### 重排与重绘
@@ -86,7 +91,8 @@
 
 #### 浏览器缓存机制
 [深入理解浏览器的缓存机制](https://www.jianshu.com/p/54cc04190252)
-
+[浅聊HTTP缓存 (HTTP Cache)
+](https://juejin.im/post/5bf3c28ee51d4514df5b7625?utm_source=gold_browser_extension)
 #### 隐式类型转换
 
 [js 运算符+== <>中的隐式数据类型转换](https://zhuanlan.zhihu.com/p/80691557)
@@ -237,6 +243,12 @@ console.log(webSite.siteUrl);
 [深入理解React：懒加载（lazy）实现原理](https://www.bbsmax.com/A/RnJWynkydq/)
 [webpack 中，module，chunk 和 bundle 的区别是什么？](https://www.cnblogs.com/skychx/p/webpack-module-chunk-bundle.html)
 
+#### 前端监控
+[GMTC 大前端时代前端监控的最佳实践](http://jm.taobao.org/2018/06/29/%E5%A4%A7%E5%89%8D%E7%AB%AF%E6%97%B6%E4%BB%A3%E5%89%8D%E7%AB%AF%E7%9B%91%E6%8E%A7%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/)
+[去大厂，你就应该了解前端监控和埋点!](https://juejin.im/post/5e9052916fb9a03c9843284f?utm_source=gold_browser_extension)
+[electron-monitor](https://github.com/TseKaHing/electron-monitor)
+[来，跟我一起 ，自研多端错误监控平台](https://juejin.im/post/5ec5c4aee51d457893029189?utm_source=gold_browser_extension)
+
 ```// todo eslint的使用与原理```
 ``` // todo ssr```
 ``` // todo cdn的原理```
@@ -350,6 +362,9 @@ add(1, 2, 3);   // 6
 
 ## CSS相关
 
+#### css概览
+[2019 年知识总结-css 篇](https://juejin.im/post/5e23af58518825261900873d?utm_source=gold_browser_extension)
+
 #### BFC,IFC,GFC,FFC
 [BFC,IFC,GFC,FFC](https://www.bbsmax.com/A/1O5Erna8d7/)
 
@@ -444,3 +459,20 @@ https://www.nowcoder.com/discuss/292850
 
 ## 安全专栏
 [前端安全面试题](https://www.cxymsg.com/guide/security.html#%E6%9C%89%E5%93%AA%E4%BA%9B%E5%8F%AF%E8%83%BD%E5%BC%95%E8%B5%B7%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8%E7%9A%84%E7%9A%84%E9%97%AE%E9%A2%98)
+
+
+## git操作专区
+
+[珍藏多年的 Git 问题和操作清单](https://github.com/sisterAn/blog/issues/39)
+
+## 源码解读
+
+[React源码解析(一):组件的实现与挂载](https://juejin.im/post/5983dfbcf265da3e2f7f32de)
+
+
+## 参考链接专区
+
+[前端面试每日 3+1](http://www.h-camel.com/index.html)
+[斑码](https://blog.acohome.cn/)
+[前端进阶系列](https://github.com/yygmind/blog)
+[手把手带你用85行代码实现一个React.js（详细讲解）](https://juejin.im/post/5ba906eae51d450e78261dbb?utm_source=gold_browser_extension)

@@ -82,8 +82,6 @@ function findMidValue(nums1, nums2) {
     let len = nums.length;
     let midValue = 0;
 
-    console.log('nums:', nums);
-
     if (len % 2 === 0) {
         midValue = (nums[len / 2] + nums[len / 2 - 1]) / 2;
     } else {
@@ -185,7 +183,7 @@ function isHuiWen (s) {
         return false;
     }
 }
-console.log(longestPalindrome('ac'))
+
 
 
 function retry (fn, times) {
@@ -364,4 +362,25 @@ var threeSum = function(nums) {
     })
     return resultArr;
 };
-console.log(threeSum([-1, 0, 1, 2, -1, -4]));
+
+
+var uniquePaths = function(m, n) {
+    let result = 0;
+    var travel = function (x, y) {
+        if (x > m || y > n) return;
+        if (x === m && y === n) return result++;
+        if (x === m) {
+            travel(x, y + 1);
+            return
+        }
+        if (y === n) {
+            travel(x + 1, y);
+            return
+        }
+        travel(x, y + 1);
+        travel(x + 1, y);
+    }
+    travel(1, 1);
+    return result;
+};
+console.log(uniquePaths(25, 4));
