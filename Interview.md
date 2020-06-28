@@ -401,6 +401,12 @@ scope-hoisting
 浏览器的缓存机制，怎么控制缓存，cache-control &expire优先级
 ```
 ```
+expire 和cache的区别， 为什么一个是时间戳一个是一个相对的时间？
+```
+```
+状态码206 & 304
+```
+```
 css如何做优化， 重排和重绘，getComputedStyle属性会导致重排吗？
 ```
 ```
@@ -416,6 +422,9 @@ https的加密过程
 
 ```
 为什么tcp是四次挥手
+```
+```
+webpack plugin & loader的区别
 ```
 ```
 题目：Semantic Versioning 是一个前端通用的版本规范。格式为“{MAJOR}.{MINOR}.{PATCH}-{alpha|beta|rc}.{number}”，要求实现 compare(a, b) 方法，比较 a, b 两个版本大小，
@@ -434,4 +443,26 @@ https的加密过程
  4          5
 从根到叶子共3条：1->2->4, 1->2->5, 1->3
 构成的数字为124，125，13，求和124 + 125 + 13 = 262即为所求
+```
+
+
+#### 二面
+
+```
+聊项目
+```
+```
+如何针对包体积做优化
+```
+```
+讲一下前端微服务
+```
+```
+var arr = [1，3，4，6........30000, 30000, 301212....1213223];
+
+var num = 30000;
+
+function getFirstAndLastIndex(arr, num) {
+    
+}
 ```

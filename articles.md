@@ -40,7 +40,8 @@
 
 
 #### 深入理解react setState机制
-[深入setState](https://github.com/sisterAn/blog/issues/26) 文中还有```transcation```等知识
+[深入setState](https://github.com/sisterAn/blog/issues/26) 
+[React中的Transaction](https://oychao.github.io/2017/09/25/react/16_transaction/)
 
 #### npm install 的基本流程？
 [为什么npm install就能购自动安装依赖](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/22)  
@@ -75,9 +76,9 @@
 #### virtual dom真的比原生dom快吗？
 [Virtual DOM 真的比操作原生 DOM 快吗？](https://www.zhihu.com/question/31809713/answer/53544875)
 [怎么理解虚拟dom](https://www.zhihu.com/question/29504639)
+[react的diff 从O(n^3)到 O(n) ，请问 O(n^3) 和O(n) 是怎么算出来？](https://www.zhihu.com/question/66851503)
 ```// todo https://mp.weixin.qq.com/s/zCGQEpEGJYQWMMvZfyUYHg```
 ```// todo 查看snabbdom源码```
-
 #### 重排与重绘
 
 ```// todo 什么情况下会导致重排与重绘？```
@@ -100,11 +101,12 @@
 [call和apply的性能对比](https://jiayili.gitbooks.io/fe-study-easier/content/javascript%E5%9F%BA%E7%A1%80/wei-shi-yao-call-bi-apply-kuai-ff1f.html)
 
 #### 前端埋点为什么采用gif的方式
+[为什么前端监控要用GIF打点](https://mp.weixin.qq.com/s/v6R2w26qZkEilXY0mPUBCw?utm_source=tuicool&utm_medium=referral)
+
 问题：
 * 为什么不采用ajax
 * 采用gif的好处
 * 为什么使用sendBeacon
-[为什么前端监控要用GIF打点](https://mp.weixin.qq.com/s/v6R2w26qZkEilXY0mPUBCw?utm_source=tuicool&utm_medium=referral)
 
 
 #### 箭头函数
@@ -236,7 +238,6 @@ console.log(webSite.siteUrl);
 [webpack 中，module，chunk 和 bundle 的区别是什么？](https://www.cnblogs.com/skychx/p/webpack-module-chunk-bundle.html)
 
 ```// todo eslint的使用与原理```
-```// todo webpack的过程```
 ``` // todo ssr```
 ``` // todo cdn的原理```
 ``` // todo 多线程与多进程的区别```

@@ -332,6 +332,36 @@ var longestPalindrome = function(s) {
     }
     console.log(dp)
 };
-
-
-console.log(longestPalindrome('babad'));
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+var threeSum = function(nums) {
+    const arraySorted = nums.sort(function (next, pre) {
+        return next > pre;
+    })
+    const resultArr = [];
+    const tempMap = {};
+    arraySorted.forEach((item, index) => {
+        if (tempMap[item]) {
+        } else {
+            tempMap[item] = 1;
+            let left = index + 1;
+            let right = arraySorted.length;
+            while (left < right) {
+                if (arraySorted[left] + arraySorted[right] === -(item)) {
+                    resultArr.push([arraySorted[left], arraySorted[right], item].sort((next, pre) => {return next > pre}));
+                    left++;
+                } else {
+                    if (arraySorted[left] + arraySorted[right] < -(item)) {
+                        left++
+                    } else {
+                        right--;
+                    }
+                }
+            }
+        }
+    })
+    return resultArr;
+};
+console.log(threeSum([-1, 0, 1, 2, -1, -4]));
