@@ -82,7 +82,7 @@
 [怎么理解虚拟dom](https://www.zhihu.com/question/29504639)
 [react的diff 从O(n^3)到 O(n) ，请问 O(n^3) 和O(n) 是怎么算出来？](https://www.zhihu.com/question/66851503)
 [让虚拟DOM和DOM-diff不再成为你的绊脚石](https://juejin.im/post/5c8e5e4951882545c109ae9c?utm_source=gold_browser_extension)
-```// todo https://mp.weixin.qq.com/s/zCGQEpEGJYQWMMvZfyUYHg```
+[从 React 历史的长河里聊虚拟DOM及其价值](https://mp.weixin.qq.com/s/zCGQEpEGJYQWMMvZfyUYHg)
 ```// todo 查看snabbdom源码```
 #### 重排与重绘
 
@@ -101,7 +101,7 @@
 [类型转换题目](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/229)
 
 #### BFC
-[https://zhuanlan.zhihu.com/p/25321647](https://zhuanlan.zhihu.com/p/25321647)
+[10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647)
 
 #### call 和apply的性能对比
 [call和apply的性能对比](https://jiayili.gitbooks.io/fe-study-easier/content/javascript%E5%9F%BA%E7%A1%80/wei-shi-yao-call-bi-apply-kuai-ff1f.html)
@@ -169,7 +169,7 @@ plugin 用 babel-traverse 对 AST 树进行遍历转译,得到新的AST树
 [首屏速度优化](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/234)
 
 #### node基础
-[前端知识体系-NodeJS相关】NodeJS基础知识全面总结](https://www.cnblogs.com/fecommunity/p/11922208.html)
+[【前端知识体系-NodeJS相关】NodeJS基础知识全面总结](https://www.cnblogs.com/fecommunity/p/11922208.html)
 
 #### 前端加密的场景及方法
 [介绍下前端加密的常见场景和方法](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/150)
@@ -209,11 +209,12 @@ console.log(webSite.siteUrl);
 #### requestAnimationFrame
 [mdn-requestAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame)
 [requestAnimationFrame](https://javascript.ruanyifeng.com/htmlapi/requestanimationframe.html)
-[网页骨架屏自动生成方案（dps）](https://zhuanlan.zhihu.com/p/74403911)
+
 
 #### 自动化生成骨架屏的方案
 [一种自动化生成骨架屏的方案](https://github.com/Jocs/jocs.github.io/issues/22)
 [page-skeleton-webpack-plugin](https://github.com/ElemeFE/page-skeleton-webpack-plugin#basic-use)
+[网页骨架屏自动生成方案（dps）](https://zhuanlan.zhihu.com/p/74403911)
 
 #### performanceApi
 [Web 性能优化-首屏和白屏时间](https://lz5z.com/Web%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-%E9%A6%96%E5%B1%8F%E5%92%8C%E7%99%BD%E5%B1%8F%E6%97%B6%E9%97%B4/)
@@ -349,17 +350,6 @@ function _inherits(Child, Parent){
 ``` // todo 实现大整数相乘```
 
 
-#### 请实现一个 add 函数，满足以下功能
-[题目地址](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/134)
-```
-add(1); 	// 1
-add(1)(2);  	// 3
-add(1)(2)(3)；  // 6
-add(1)(2, 3);   // 6
-add(1, 2)(3);   // 6
-add(1, 2, 3);   // 6
-```
-
 ## CSS相关
 
 #### css概览
@@ -420,6 +410,9 @@ header压缩
 
 
 ## 算法专栏
+
+#### 汇总
+[写给前端的算法进阶指南，我是如何两个月零基础刷200题](https://juejin.im/post/5f05087cf265da22d466f60f)
 
 #### 哈希表
 [头条正在面的哈希表问题](https://juejin.im/post/5ecb1db8f265da77147104c2?utm_source=gold_browser_extension)
