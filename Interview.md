@@ -466,3 +466,20 @@ function getFirstAndLastIndex(arr, num) {
     
 }
 ```
+```
+聊一下fiber。（谈了很多，包括react的虚拟dom 到diff算法）
+```
+
+#### 三面
+```
+带团队过程中遇到的问题
+```
+```
+前端工程化的理解
+```
+```
+对webpack的理解，基于webpack现有能力如何拓展更多的能力？
+```
+```
+node如何扛住春晚的流量？有哪些策略
+```
